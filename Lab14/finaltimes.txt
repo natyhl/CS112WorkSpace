@@ -1,0 +1,10 @@
+Weds May 15, 10am-12pm: 2
+Weds May 15, 12:30-2:30pm: 1 
+Weds May 15, 5:30-7:30pm: 3
+
+Please put JUST a number after each option above:
+1 - my favorite option
+2 - I can make this time but not my favorite
+3 - I cannot make this time
+
+When filled out, please push this file to your Lab14 directory in GitHub.

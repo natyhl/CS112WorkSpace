@@ -1,0 +1,28 @@
+﻿A: We will call DoubleMe(Integer arg) in the ObjsAndRefs class. We will create a new variable, however, we don’t store it anywhere, so we never changed x or y. 
+
+
+B: In this case, we will call DoubleMe(Integer arg), where arg = 1, in the ObjsAndRefs class. DoubleMe(1) will return 2 and we assign this value to y.
+
+
+C: y is now 2. We will call will call DoubleMe(2) in the ObjsAndRefs class, which returns 4. And we will assign this new value to x.
+
+
+D: x is now 4, y is 2. We will call DoubleMe(4) in the ObjsAndRefs class, which returns 8. And we will assign this new value to x.
+
+
+//FunWithMyInt will call the method DoubleMe in class MyInt because x and y are of type MyInt
+
+
+E: We call doubleMe(MyInt arg) which will call doubleMe() on arg=1. Integer m_value is by default accessible by all classes within the same file and is not final. m_value = 1, Integer DoubleMe() will return 2. So x.DoubleMe() will change x to 2.
+
+
+F: x=2, y=1. We call x.Doubleme with input x. This will call MyInt DoubleMe(MyInt arg)  which will call DoubleMe() that is going to change m_value to 4, and will return new MyInt(4) and assign it to y.
+
+
+G: x=4, y=4. We call y.Doubleme with input y=4. This will call MyInt DoubleMe(MyInt arg)  which will call DoubleMe() that is going to change m_value to 8, doubleup y, and will return new MyInt(8) and assign it to x.
+
+
+H: x=8, y=8. We call x.Doubleme with input x=8. This will call MyInt DoubleMe(MyInt arg)  which will call DoubleMe() which is going to change m_value to 16, doubleup x, and will return new MyInt(16) and assign it to x. Y isn’t changed in this case.
+
+
+I: x=16, y=8. We simply call DoubleMe() method on y, which changes the m_value from 8 to 16. And we print out the final value of y=16 together with unchanged value of x=16.

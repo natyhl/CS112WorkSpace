@@ -1,0 +1,25 @@
+create myFile
+create
+cat myFile
+cat
+rm myFile
+rm
+mkdir myDir
+mkdir
+rmdir myDir
+cd myDir
+cd
+ls
+du
+pwd
+find myName
+find myName myName
+exit
+myDir
+myFile
+
+First I tested my code with actual input on the keyboard. Then I wrote this file notes.txt and used the file redirection to read it. I was changing the number of lines of the file and changing a lot of different commands. Generally, I was trying the combination of the commands listed above. I also had to use a debugger and put it on the two lines with my prompt> print statement to figure out an issue when my program was printing "prompt>" four times in a row even though the file had only one line.
+
+Part2:
+
+After implementing create, cat, rm and ls, I started testing different combinations of creating and removing files and I used ls and cat to test whether deleted files were removed or if I could still see their file content. Another step was to implement mkdir and rmdir after the previous tests worked. After this, I implemented cd and du. I worked on this mostly in professors' office hours. I added few print statements when I was close, but was still not getting exactly the output i was supposed to. Lastly, I worked on find and pwd. Throughout the whole time, I was debugging the main() method (I put a debugger on line 198) and stepping over each command and into the methods that were called by each input. I tested few different special cases like: pwd when in root, creating a file of the same name as directory inside the directory, creating files with same name located in different directories and commands that might possibly cause an error.
